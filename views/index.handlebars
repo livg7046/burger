@@ -1,0 +1,23 @@
+<div style="">
+    <h2 class="text-center">EAT-DAT-BURGER</h1>
+</div>
+<img style="width: 300px; align:center" src="../assets/images/burger.png">
+<div>
+    <div id="eatMe">
+        <ul>
+            {{#each burgers}}
+                {{#unless eaten}}
+                {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+    <div id="eaten"></div>
+</div>
+<h3>What kind of Burger would you like to eat?</h3>
+<form class="create-form">
+    <div class="form-group">
+        <label for="newBurger">Burger:</label>
+        <input type="text" id="burger">
+    </div>
+    <button type="submit" id="addBurger">Add</button>
+</form>
